@@ -1,3 +1,11 @@
+''' From my understanding of question 2 was to split the
+methods into their own module for better reading and neater code
+so I esentially copied them from the main and into their own
+module if I was supposed to do more with it please let me know.'''
+
+
+from weather_app import WeatherApp
+
 # 1. Building a Modular Online Bookstore System
 # Objective: The objective of this assignment is to create a modular online bookstore system using Python. The focus will be on applying the principle of modularity to enhance code organization, maintainability, and scalability. The system will be broken down into different modules, each handling specific functionalities of the bookstore.
 
@@ -87,8 +95,11 @@
 #             forecast = display_weather(city)
 #         print(forecast)
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    app = WeatherApp()
+    app.main()
+
+
 # Expected Outcome:
 
 # A main.py script that demonstrates how the different modules and classes come together to form a fully functional weather forecast application. The script should exemplify the benefits of using OOP and modular programming in Python.

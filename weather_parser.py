@@ -1,11 +1,9 @@
 from city import City
 
-
 class WeatherParser:
-    def parse_weather_data(self,city):
+    def parse_weather_data(self, city):
         if not city:
             return "Weather data not available"
-        
         city_name = city.name
         temperature = city.temperature
         condition = city.condition
